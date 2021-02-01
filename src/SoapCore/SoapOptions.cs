@@ -16,6 +16,7 @@ namespace SoapCore
 		public Binding Binding { get; set; }
 		public int BufferThreshold { get; set; } = 1024 * 30;
 		public long BufferLimit { get; set; }
+		public string BaseUrl { get; set; }
 
 		/// <summary>
 		/// Gets or sets a value indicating whether publication of service metadata on HTTP GET request is activated
@@ -58,7 +59,8 @@ namespace SoapCore
 				HttpGetEnabled = opt.HttpGetEnabled,
 				OmitXmlDeclaration = opt.OmitXmlDeclaration,
 				IndentXml = opt.IndentXml,
-				XmlNamespacePrefixOverrides = opt.XmlNamespacePrefixOverrides
+				XmlNamespacePrefixOverrides = opt.XmlNamespacePrefixOverrides,
+				BaseUrl = opt.BaseUrl,
 			};
 
 			return soapOptions;

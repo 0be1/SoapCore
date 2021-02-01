@@ -80,5 +80,7 @@ namespace SoapCore
 		/// Gets or sets an collection of Xml Namespaces to override the default prefix for.
 		/// </summary>
 		public XmlNamespaceManager XmlNamespacePrefixOverrides { get; set; } = new XmlNamespaceManager(new NameTable());
+
+		public string BaseUrl { get; set; }
 	}
 }
